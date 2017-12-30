@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 1.0
 Name:		texlive-cbfonts-fd
-Version:	1.0
-Release:	9
+Version:	1.2
+Release:	1
 Summary:	LaTeX font description files for the CB Greek fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/cbfonts-fd
