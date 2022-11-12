@@ -1,19 +1,13 @@
-# revision 31624
-# category Package
-# catalog-ctan /fonts/greek/cbfonts-fd
-# catalog-date 2013-09-10 12:13:23 +0200
-# catalog-license lppl1.3
-# catalog-version 1.0
 Name:		texlive-cbfonts-fd
-Version:	1.2
-Release:	2
+Version:	54080
+Release:	1
 Summary:	LaTeX font description files for the CB Greek fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/cbfonts-fd
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.r54080.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.doc.r54080.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.source.r54080.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ the means whereby the NFSS knows which fonts a LaTeX user is
 requesting.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -53,7 +47,8 @@ requesting.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
