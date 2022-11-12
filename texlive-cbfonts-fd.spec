@@ -5,9 +5,9 @@ Summary:	LaTeX font description files for the CB Greek fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/cbfonts-fd
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.r54080.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.doc.r54080.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.source.r54080.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cbfonts-fd.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
