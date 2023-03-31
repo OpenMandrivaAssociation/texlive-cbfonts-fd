@@ -1,6 +1,6 @@
 Name:		texlive-cbfonts-fd
 Version:	54080
-Release:	1
+Release:	2
 Summary:	LaTeX font description files for the CB Greek fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/cbfonts-fd
